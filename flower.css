@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+}
+.header-right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #b74a3c;
+}
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: #b74a3c;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 40px;
+  max-width: 1140px;
+  margin: auto;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  line-height: 1.2;
+}
+
+.hero-text h1 .red {
+  color: #b74a3c;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.hero img {
+  max-width: 45%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-text,
+  .hero img {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 36px;
+  }
+}
+/* --- Mobile Styles --- */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .hero-text,
+  .hero img {
+    max-width: 100%;
+  }
+
+  .hero-text h1 {
+    font-size: 32px;
+  }
+
+  /* nav links on small screens */
+  .nav-links {
+    display: none;
+  }
+
+  /*layout for phone*/
+
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .cart {
+    font-size: 16px;
+  }
+}
