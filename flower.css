@@ -201,5 +201,64 @@ nav a:hover {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+}* {
+  box-sizing: border-box;
 }
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 40px;
+  flex-wrap: wrap;
+  background-color: #f8f8f8;
+}
+
+.section img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  max-width: 500px;
+}
+
+.content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.content ul {
+  list-style: disc;
+  padding-left: 20px;
+}
+
+.content li {
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* Responsive Design plants lover */
+@media (max-width: 768px) {
+  .section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .content {
+    text-align: left;
+  }
+}
+
+
 
